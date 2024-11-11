@@ -1,0 +1,15 @@
+{
+  "name": "slideshare-downloader",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "tailwindcss": "^3.0.24"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/input.css -o ./stylesheets/tailwindcss.css --minify --watch"
+  },
+  "author": "",
+  "license": "ISC"
+}

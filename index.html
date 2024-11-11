@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Download slideshare file for free">
+  <title>Slideshare Downloader</title>
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./stylesheets/all.css">
+  <link rel="stylesheet" href="./stylesheets/tailwindcss.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="transition-all bg-white dark:bg-gray-800 relative">
+  <div id="alert-container"></div>
+  <div class="absolute top-4 right-4">
+    <div class="text-3xl transition-all text-gray-800 cursor-pointer dark:text-white hover:opacity-80" id="toggle-theme">
+      <div id="moon">
+        <i class="fa-solid fa-moon"></i>
+      </div>
+      <div id="sun">
+        <i class="fa-solid fa-sun"></i>
+      </div>
+    </div>
+  </div>
+  <div class="wrapper container mx-auto p-4 pt-0">
+    <main class="flex flex-col items-center justify-center">
+      <div class="text-center pt-6 mb-2">
+        <h1 class="transition-all text-3xl sm:text-4xl font-extrabold text-gray-800 dark:text-white leading-tight tracking-wide">
+          Slideshare Downloader
+        </h1>
+        <p class="transition text-sm text-gray-600 dark:text-gray-400">Download Free Slideshare PDF/PPT </p>
+      </div>
+      <div class="max-w-sm sm:max-w-lg mx-auto pb-10">
+        <div
+          class="transition-all rounded-md px-4 py-4 sm:p-8 sm:py-8 shadow-xl bg-white dark:bg-gray-800 shadow-gray-400 dark:shadow-gray-900 relative overflow-hidden">
+          <form id="url-form">
+            <div
+              class="transition-all p-3 bg-gray-200 bg-opacity-80 dark:bg-gray-700 dark:bg-opacity-30 rounded-md flex gap-2 items-center">
+              <label class="text-gray-400" for="url"><i class="fa-solid fa-link"></i></label>
+              <input type="text" placeholder="Paste link here!"
+                class="focus:outline-none bg-transparent w-full autofill:bg-transparent dark:caret-white text-gray-800 dark:text-white"
+                id="url" autocomplete="off">
+              <button type="submit"
+                class="transition-all items-center py-2 px-4 bg-gradient-to-tr from-gray-800 via-gray-800 to-gray-700 dark:from-gray-900 dark:via-gray-900 dark:to-gray-800  rounded-md text-white font-bold hover:opacity-80"
+                id="btn-download">Download</button>
+            </div>
+          </form>
+          <div id="download-progress" class="bg-gray-900 dark:bg-gray-700 h-1 absolute bottom-0 left-0 transition-all">
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="text-center pt-4 flex gap-4 justify-center">
+        <p class="transition-all text-gray-500 dark:text-gray-400">
+          Created by <span class="transition-all font-bold text-gray-800 dark:text-white"><i class="fa-brands fa-github"></i> <a
+              href="https://github.com/SlideShareDownloader" class="underline">SlideShareDownloader</a></span>
+        </p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+
+</html>
